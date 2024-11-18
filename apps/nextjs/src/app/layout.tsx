@@ -2,9 +2,9 @@ import type { Metadata, Viewport } from "next";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 
-import { cn } from "@acme/ui";
-import { ThemeProvider, ThemeToggle } from "@acme/ui/theme";
-import { Toaster } from "@acme/ui/toast";
+import { cn } from "@justcollab/ui";
+import { ThemeProvider, ThemeToggle } from "@justcollab/ui/theme";
+import { Toaster } from "@justcollab/ui/toast";
 
 import { TRPCReactProvider } from "~/trpc/react";
 
@@ -15,21 +15,21 @@ import { env } from "~/env";
 export const metadata: Metadata = {
   metadataBase: new URL(
     env.VERCEL_ENV === "production"
-      ? "https://turbo.t3.gg"
+      ? "https://turbo.justcollab.com"
       : "http://localhost:3000",
   ),
-  title: "Create T3 Turbo",
-  description: "Simple monorepo with shared backend for web & mobile apps",
+  title: "Just Collab",
+  description: "Collab with the best influencers in your niche",
   openGraph: {
-    title: "Create T3 Turbo",
-    description: "Simple monorepo with shared backend for web & mobile apps",
-    url: "https://create-t3-turbo.vercel.app",
-    siteName: "Create T3 Turbo",
+    title: "Just Collab",
+    description: "Collab with the best influencers in your niche",
+    url: "https://turbo.justcollab.com",
+    siteName: "Just Collab",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@jullerino",
-    creator: "@jullerino",
+    site: "@justcollab",
+    creator: "@justcollab",
   },
 };
 
